@@ -3,36 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
 body {
-  background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
 .container {
-  background-color: black;
+  background-color: hsl(0, 0%, 8%);
   width: 900px;
   padding: 40px;
   margin: 80px auto;
-  height: 800px;
+  min-height: 800px;
 }
 .card {
   background-color: hsl(0, 0%, 12%);
-  width: 350px;
-  padding: 20px;
-  margin: 0 auto;
+  width: 400px;
+  padding: 40px;
+  margin: 30px auto 0;
   text-align: center;
-  margin-top: 30px;
+  border-radius: 12px;
 }
 .imgs img {
   border-radius: 90px;
   margin-bottom: 20px;
   margin-top: 20px;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
 }
 .name {
   color: hsl(0, 0%, 100%);
   text-align: center;
   line-height: 1.8;
+  margin-bottom: 10px;
 }
 .city {
   color: hsl(75, 94%, 57%);
@@ -44,11 +50,11 @@ body {
   margin-bottom: 20px;
 }
 .link a,
-li {
+.link li {
   text-decoration: none;
   list-style-type: none;
 }
-.git {
+.link-button {
   display: block;
   background-color: hsl(0, 0%, 20%);
   padding: 10px;
@@ -58,70 +64,19 @@ li {
   border-radius: 8px;
   margin-bottom: 12px;
 }
-.git:hover,
-.git:focus {
+.link-button:hover,
+.link-button:focus {
   color: hsl(75, 94%, 57%);
 }
 
-.front {
-  display: block;
-  background-color: hsl(0, 0%, 20%);
-  padding: 10px;
-  width: 300px;
-  margin: auto;
-  color: hsl(0, 0%, 100%);
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-.front:hover,
-.front:focus {
-  color: hsl(75, 94%, 57%);
-}
-
-.lind {
-  display: block;
-  background-color: hsl(0, 0%, 20%);
-  padding: 10px;
-  width: 300px;
-  margin: auto;
-  color: hsl(0, 0%, 100%);
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-.lind:hover,
-.lind:focus {
-  color: hsl(75, 94%, 57%);
-}
-
-.twit {
-  display: block;
-  background-color: hsl(0, 0%, 20%);
-  padding: 10px;
-  width: 300px;
-  margin: auto;
-  color: hsl(0, 0%, 100%);
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-.twit:hover,
-.twit:focus {
-  color: hsl(75, 94%, 57%);
-}
-.insta {
-  display: block;
-  background-color: hsl(0, 0%, 20%);
-  padding: 10px;
-  width: 300px;
-  margin: auto;
-  color: hsl(0, 0%, 100%);
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-.insta:hover,
-.insta:focus {
-  color: hsl(75, 94%, 57%);
-}
 @media (min-width: 375px) {
+  .card {
+    width: 100%;
+  }
 }
 @media (max-width: 1440px) {
+  .card {
+    width: 400px;
+  }
 }
+
